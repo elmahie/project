@@ -1,0 +1,251 @@
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: small;
+}
+h3{
+    color:#18447c;
+}
+body {
+    background: url("images/gradient.png");
+    min-height: 100%;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "EB Garamond", sans-serif;
+    font-size: 25px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+body.fade-out {
+    opacity: 0;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    width: 50%;
+    text-align: right;
+}
+
+/* Navigation Bar Rules */
+nav {
+    margin-left: 80px;
+    margin-right: 80px;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+img {
+    position: absolute;
+    left: 80px;
+}
+
+img.img-homepage {
+    width: 240px;
+    height: 360px;
+    border: 3px solid rgb(31, 31, 33);
+    border-radius: 10px;
+    float: right;
+}
+
+nav ul li a {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3vw;
+    border-radius: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.6s;
+    background-color: transparent;
+}
+
+nav ul li a.active {
+    background-color: #5083c2;
+}
+
+nav ul li a:hover {
+    background-color: #6f96d2;
+}
+
+nav .nav-container {
+    display: absolute;
+    align-items: center;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #18447c;
+    font-style: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+.small-black-font{
+    font-size: smaller;
+    color:black"
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 8px;
+}
+
+.text-container {
+    width: 100%;
+    flex: 1;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5083c2;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6f96d2;
+}
+
+.text-container {
+    width: 50%;
+}
+
+#myVideo {
+    width: 10%;
+    height: auto;
+}
+.content-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin-right: 180px;
+    margin-left: 180px;
+    border-radius: 50px;
+}
+
+.features-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: calc(100% - 360px);
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: calc(50% - 1%);
+    margin-right: 1%;
+}
+
+.video-container {
+    width: 175px;
+    height: 256px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-top: 5px solid #000;
+    border-bottom: 5x solid #000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
